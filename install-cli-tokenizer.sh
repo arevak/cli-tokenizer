@@ -3,11 +3,11 @@
 # Create ~/bin directory if it doesn't exist
 mkdir -p ~/bin
 
-# Download the Python script
-curl -L https://raw.githubusercontent.com/ericciarla/cli-tokenizer/main/cli-tokenizer-counter.py -o ~/bin/cli-tokenizer-counter.py
+# Copy the Python script from current directory
+cp ./cli-tokenizer-counter.py ~/bin/cli-tokenizer-counter.py
 
-# Download the shell wrapper
-curl -L https://raw.githubusercontent.com/ericciarla/cli-tokenizer/main/tokens -o ~/bin/tokens
+# Copy the shell wrapper from current directory
+cp ./tokens ~/bin/tokens
 
 # Make the shell wrapper executable
 chmod +x ~/bin/tokens
